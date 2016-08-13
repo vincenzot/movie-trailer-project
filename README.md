@@ -7,3 +7,8 @@ In this project there are these file list:
 * **fresh_tomatoes.py** - It's the web site HTML page generator. It receives the movie list from `entertainment_center.py` and uses it to generate `fresh_tomatoes.html` page. Then it will open the page with your default web browser.
 * **media.py** - 
 
+# Creator
+
+**Vincenzo Tartaglia**
+
+  - http://github.com/vincenzot
