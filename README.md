@@ -1,2 +1,2 @@
-# movie-trailer-project
-Project 1, Movie Trailer Website - users can browse featured movie list
+# Movie Trailer Website - Project 1
+A Movie Trailer Website where users can browse featured movie list.
