@@ -10,7 +10,6 @@ TITANIC = media.Movie("Titanic",
                       "Drama, Romance",
                       "Leonardo DiCaprio, Kate Winslet, Billy Zane",
                       "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
-                      "PG-13",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
 
 BENVENUTI_AL_SUD = media.Movie("Benvenuti al Sud",
@@ -22,7 +21,6 @@ BENVENUTI_AL_SUD = media.Movie("Benvenuti al Sud",
                       "Comedy",
                       "Claudio Bisio, Alessandro Siani, Angela Finocchiaro",
                       "Overwhelmed by his wife, a Northern Italy postal worker feigns a disability to request a transfer to Milan and when he's unmasked is sent for two years to a far and tiny village near Naples",
-                      "G",
                       "https://upload.wikimedia.org/wikipedia/commons/0/05/RATED_G.svg")
 
 THE_SOCIAL_NETWORK = media.Movie("The Social Network",
@@ -34,7 +32,6 @@ THE_SOCIAL_NETWORK = media.Movie("The Social Network",
                       "Comedy, Biography, Drama",
                       "Jesse Eisenberg, Andrew Garfield, Justin Timberlake",
                       "On a fall night in 2003, Harvard undergrad and computer programming genius Mark Zuckerberg sits down at his computer and heatedly begins working on a new idea. In a fury of blogging and programming, what begins in his dorm room soon becomes a global social network and a revolution in communication. A mere six years and 500 million friends later, Mark Zuckerberg is the youngest billionaire in history... but for this entrepreneur, success leads to both personal and legal complications.",
-                      "PG-13",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
 
 THE_IMITATION_GAME = media.Movie("The Imitation Game",
@@ -46,7 +43,6 @@ THE_IMITATION_GAME = media.Movie("The Imitation Game",
                       "Biography, Drama, Thriller, History",
                       "Benedict Cumberbatch, Keira Knightley, Matthew Goode",
                       "Based on the real life story of legendary cryptanalyst Alan Turing, the film portrays the nail-biting race against time by Turing and his brilliant team of code-breakers at Britain's top-secret Government Code and Cypher School at Bletchley Park, during the darkest days of World War II.",
-                      "PG-13",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
 
 FLASH_OF_GENIUS = media.Movie("Flash of Genius",
@@ -58,7 +54,6 @@ FLASH_OF_GENIUS = media.Movie("Flash of Genius",
                       "Biography, Drama",
                       "Greg Kinnear, Lauren Graham, Alan Alda",
                       "Robert Kearns takes on the Detroit automakers who he claims stole his idea for the intermittent windshield wiper.",
-                      "PG-13",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
 
 ENIGMA = media.Movie("Enigma",
@@ -70,7 +65,6 @@ ENIGMA = media.Movie("Enigma",
                       "Drama, Mystery, Romance",
                       "Dougray Scott, Kate Winslet, Saffron Burrows",
                       "A young genius frantically races against time to crack an enemy code and solve the mystery surrounding the woman he loves.",
-                      "R",
                       "https://upload.wikimedia.org/wikipedia/commons/7/7e/RATED_R.svg")
 
 A_BEAUTIFUL_MIND = media.Movie("A Beautiful Mind",
@@ -82,7 +76,6 @@ A_BEAUTIFUL_MIND = media.Movie("A Beautiful Mind",
                       "Biography, Drama",
                       "Russell Crowe, Ed Harris, Jennifer Connelly",
                       "After John Nash, a brilliant but asocial mathematician, accepts secret work in cryptography, his life takes a turn for the nightmarish.",
-                      "PG-13",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
 
 BLACKJACK = media.Movie("21",
@@ -94,7 +87,6 @@ BLACKJACK = media.Movie("21",
                       "Crime, Drama, Thriller",
                       "Jim Sturgess, Kate Bosworth, Kevin Spacey",
                       "21 is the fact-based story about six MIT students who were trained to become experts in card counting and subsequently took Vegas casinos for millions in winnings. ",
-                      "PG-13",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
 
 THE_BANK = media.Movie("The Bank",
@@ -106,7 +98,6 @@ THE_BANK = media.Movie("The Bank",
                       "Drama, Romance, Thriller",
                       "David Wenham, Anthony LaPaglia, Sibylla Budd",
                       "The Bank is a thriller about banking, corruption and alchemy.",
-                      "R",
                       "https://upload.wikimedia.org/wikipedia/commons/7/7e/RATED_R.svg")
 
 
