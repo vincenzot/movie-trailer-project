@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- Including jQuery Shorten Plugin -->
+    <script type="text/javascript"
+	src="http://viralpatel.net/blogs/demo/jquery/jquery.shorten.1.0.js"></script>
+
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
@@ -50,7 +54,28 @@
             background-color: white;
         }
     </style>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	
+		$(".gdesc").shorten({
+	"showChars" : 70,
+	"moreText"	: "See More",
+	"lessText"	: "Less",
+});
+
+                $(".starred").shorten({
+	"showChars" : 20,
+	"moreText"	: "See More",
+	"lessText"	: "Less",
+});
+	
+	});
+</script>
+    
     <script type="text/javascript" charset="utf-8">
+
+
         // Pause the video when the modal is closed
         $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
             // Remove the src so the player itself gets removed, as this is the only
@@ -59,6 +84,9 @@
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
+
+
+
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
             var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
@@ -214,23 +242,293 @@
     
     <div class="container">
       
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="2e-eXJ6HgkQ" data-toggle="modal" data-target="#trailer">
-    <img style="position:relative; top:0; left:0; z-index:1" src="http://nsa37.casimages.com/img/2015/09/25/150925121855869372.jpg" width="220" height="342">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="S5CjKEFb-sM" data-toggle="modal" data-target="#trailer">
+    <img style="position:relative; top:0; left:0; z-index:1" src="http://images.catania.liveuniversity.it/sites/2/2015/02/the_imitation_game_a_p.jpg" width="220" height="342">
     <img style="position:absolute; top:20; left:310; z-index:2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png" width="50" height="30">
-    <h2>Titanic<h4>(1997)</h4></h2><h5><b>Lenght:</b> 194 minutes</h5><h5><b>Genre:</b> Drama, Romance</h5><h5><b>Plot:</b> <i>A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.</i></h5>
+    <h2>The Imitation Game<h4>(2014)</h4></h2><h5><b>Director:</b> Morten Tyldum</h5><h5><b>Lenght:</b> 114 minutes</h5><h5><b>Genre:</b> Biography, Drama, Thriller, History</h5><h5><b>Starred:</b> <div class="starred">Benedict Cumberbatch, Keira Knightley, Matthew Goode</div></h5><h5><b>Plot:</b> <i><div class="gdesc">Based on the real life story of legendary cryptanalyst Alan Turing, the film portrays the nail-biting race against time by Turing and his brilliant team of code-breakers at Britain's top-secret Government Code and Cypher School at Bletchley Park, during the darkest days of World War II.</div></i></h5>
+
+<!-- Modal More Movie Details-->
+<div id="MovieDetails" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Credits</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>
+
+</div>
+
+
+
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="0Biy-okZ0l8" data-toggle="modal" data-target="#trailer">
+    <img style="position:relative; top:0; left:0; z-index:1" src="http://mcpl.info/sites/default/files/imagepicker/23/Flash-Of-Genius.jpg" width="220" height="342">
+    <img style="position:absolute; top:20; left:310; z-index:2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png" width="50" height="30">
+    <h2>Flash of Genius<h4>(2008)</h4></h2><h5><b>Director:</b> Marc Abraham</h5><h5><b>Lenght:</b> 119 minutes</h5><h5><b>Genre:</b> Biography, Drama</h5><h5><b>Starred:</b> <div class="starred">Greg Kinnear, Lauren Graham, Alan Alda</div></h5><h5><b>Plot:</b> <i><div class="gdesc">Robert Kearns takes on the Detroit automakers who he claims stole his idea for the intermittent windshield wiper.</div></i></h5>
+
+<!-- Modal More Movie Details-->
+<div id="MovieDetails" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Credits</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="5NrfiIpUd20" data-toggle="modal" data-target="#trailer">
+    <img style="position:relative; top:0; left:0; z-index:1" src="http://cfile239.uf.daum.net/image/264D3F4452163717090573" width="220" height="342">
+    <img style="position:absolute; top:20; left:310; z-index:2" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/RATED_R.svg" width="50" height="30">
+    <h2>Enigma<h4>(2001)</h4></h2><h5><b>Director:</b> Michael Apted</h5><h5><b>Lenght:</b> 119 minutes</h5><h5><b>Genre:</b> Drama, Mystery, Romance</h5><h5><b>Starred:</b> <div class="starred">Dougray Scott, Kate Winslet, Saffron Burrows</div></h5><h5><b>Plot:</b> <i><div class="gdesc">A young genius frantically races against time to crack an enemy code and solve the mystery surrounding the woman he loves.</div></i></h5>
+
+<!-- Modal More Movie Details-->
+<div id="MovieDetails" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Credits</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="3JtQfHPPGS8" data-toggle="modal" data-target="#trailer">
     <img style="position:relative; top:0; left:0; z-index:1" src="https://upload.wikimedia.org/wikipedia/en/2/21/Benvenuti_al_Sud.jpg" width="220" height="342">
     <img style="position:absolute; top:20; left:310; z-index:2" src="https://upload.wikimedia.org/wikipedia/commons/0/05/RATED_G.svg" width="50" height="30">
-    <h2>Benvenuti al Sud<h4>(2010)</h4></h2><h5><b>Lenght:</b> 106 minutes</h5><h5><b>Genre:</b> Comedy</h5><h5><b>Plot:</b> <i>Overwhelmed by his wife, a Northern Italy postal worker feigns a disability to request a transfer to Milan and when he's unmasked is sent for two years to a far and tiny village near Naples</i></h5>
+    <h2>Benvenuti al Sud<h4>(2010)</h4></h2><h5><b>Director:</b> Luca Miniero</h5><h5><b>Lenght:</b> 106 minutes</h5><h5><b>Genre:</b> Comedy</h5><h5><b>Starred:</b> <div class="starred">Claudio Bisio, Alessandro Siani, Angela Finocchiaro</div></h5><h5><b>Plot:</b> <i><div class="gdesc">Overwhelmed by his wife, a Northern Italy postal worker feigns a disability to request a transfer to Milan and when he's unmasked is sent for two years to a far and tiny village near Naples</div></i></h5>
+
+<!-- Modal More Movie Details-->
+<div id="MovieDetails" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Credits</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="3JtQfHPPGS8" data-toggle="modal" data-target="#trailer">
+</div>
+
+
+
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="lB95KLmpLR4" data-toggle="modal" data-target="#trailer">
     <img style="position:relative; top:0; left:0; z-index:1" src="https://upload.wikimedia.org/wikipedia/en/7/7a/Social_network_film_poster.jpg" width="220" height="342">
     <img style="position:absolute; top:20; left:310; z-index:2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png" width="50" height="30">
-    <h2>The Social Network<h4>(2010)</h4></h2><h5><b>Lenght:</b> 120 minutes</h5><h5><b>Genre:</b> Comedy, Biographic, Dramatic</h5><h5><b>Plot:</b> <i>Overwhelmed by his wife, a Northern Italy postal worker feigns a disability to request a transfer to Milan and when he's unmasked is sent for two years to a far and tiny village near Naples</i></h5>
+    <h2>The Social Network<h4>(2010)</h4></h2><h5><b>Director:</b> David Fincher</h5><h5><b>Lenght:</b> 120 minutes</h5><h5><b>Genre:</b> Comedy, Biography, Drama</h5><h5><b>Starred:</b> <div class="starred">Jesse Eisenberg, Andrew Garfield, Justin Timberlake</div></h5><h5><b>Plot:</b> <i><div class="gdesc">On a fall night in 2003, Harvard undergrad and computer programming genius Mark Zuckerberg sits down at his computer and heatedly begins working on a new idea. In a fury of blogging and programming, what begins in his dorm room soon becomes a global social network and a revolution in communication. A mere six years and 500 million friends later, Mark Zuckerberg is the youngest billionaire in history... but for this entrepreneur, success leads to both personal and legal complications.</div></i></h5>
+
+<!-- Modal More Movie Details-->
+<div id="MovieDetails" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Credits</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>
+
+</div>
+
+
+
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="2e-eXJ6HgkQ" data-toggle="modal" data-target="#trailer">
+    <img style="position:relative; top:0; left:0; z-index:1" src="http://nsa37.casimages.com/img/2015/09/25/150925121855869372.jpg" width="220" height="342">
+    <img style="position:absolute; top:20; left:310; z-index:2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png" width="50" height="30">
+    <h2>Titanic<h4>(1997)</h4></h2><h5><b>Director:</b> James Cameron</h5><h5><b>Lenght:</b> 194 minutes</h5><h5><b>Genre:</b> Drama, Romance</h5><h5><b>Starred:</b> <div class="starred">Leonardo DiCaprio, Kate Winslet, Billy Zane</div></h5><h5><b>Plot:</b> <i><div class="gdesc">A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.</div></i></h5>
+
+<!-- Modal More Movie Details-->
+<div id="MovieDetails" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Credits</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="nIR3wj9Ssaw" data-toggle="modal" data-target="#trailer">
+    <img style="position:relative; top:0; left:0; z-index:1" src="http://psicotesa.com/wp-content/uploads/2014/03/Una_mente_maravillosa-999588239-large.jpg" width="220" height="342">
+    <img style="position:absolute; top:20; left:310; z-index:2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png" width="50" height="30">
+    <h2>A Beautiful Mind<h4>(2001)</h4></h2><h5><b>Director:</b> Ron Howard</h5><h5><b>Lenght:</b> 135 minutes</h5><h5><b>Genre:</b> Biography, Drama</h5><h5><b>Starred:</b> <div class="starred">Russell Crowe, Ed Harris, Jennifer Connelly</div></h5><h5><b>Plot:</b> <i><div class="gdesc">After John Nash, a brilliant but asocial mathematician, accepts secret work in cryptography, his life takes a turn for the nightmarish.</div></i></h5>
+
+<!-- Modal More Movie Details-->
+<div id="MovieDetails" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Credits</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="7KfktaRCvLY" data-toggle="modal" data-target="#trailer">
+    <img style="position:relative; top:0; left:0; z-index:1" src="https://images-na.ssl-images-amazon.com/images/I/511Pe8cRhLL.jpg" width="220" height="342">
+    <img style="position:absolute; top:20; left:310; z-index:2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png" width="50" height="30">
+    <h2>21<h4>(2008)</h4></h2><h5><b>Director:</b> Robert Luketic</h5><h5><b>Lenght:</b> 123 minutes</h5><h5><b>Genre:</b> Crime, Drama, Thriller</h5><h5><b>Starred:</b> <div class="starred">Jim Sturgess, Kate Bosworth, Kevin Spacey</div></h5><h5><b>Plot:</b> <i><div class="gdesc">21 is the fact-based story about six MIT students who were trained to become experts in card counting and subsequently took Vegas casinos for millions in winnings. </div></i></h5>
+
+<!-- Modal More Movie Details-->
+<div id="MovieDetails" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Credits</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="vPXK-FfnXxU" data-toggle="modal" data-target="#trailer">
+    <img style="position:relative; top:0; left:0; z-index:1" src="http://moviescounter.com/wp-content/uploads/2016/03/MV5BMTkwMjU4NTM3Ml5BMl5BanBnXkFtZTcwODU4NDEzMQ@@._V1__SX1072_SY673_-212x300.jpg" width="220" height="342">
+    <img style="position:absolute; top:20; left:310; z-index:2" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/RATED_R.svg" width="50" height="30">
+    <h2>The Bank<h4>(2001)</h4></h2><h5><b>Director:</b> Robert Connolly</h5><h5><b>Lenght:</b> 104 minutes</h5><h5><b>Genre:</b> Drama, Romance, Thriller</h5><h5><b>Starred:</b> <div class="starred">David Wenham, Anthony LaPaglia, Sibylla Budd</div></h5><h5><b>Plot:</b> <i><div class="gdesc">The Bank is a thriller about banking, corruption and alchemy.</div></i></h5>
+
+<!-- Modal More Movie Details-->
+<div id="MovieDetails" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Credits</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
 
     </div>
 

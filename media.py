@@ -23,7 +23,6 @@ class Movie():
                  genre,
                  actors,
                  plot,
-                 release_date,
                  mpaa,
                  mpaa_icon):
         
@@ -36,6 +35,5 @@ class Movie():
         self.genre = genre
         self.actors = actors
         self.plot = plot
-        self.release_date = release_date
         self.mpaa = mpaa
         self.mpaa_icon = mpaa_icon
