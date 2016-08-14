@@ -8,7 +8,7 @@ In this project there are these file list:
 * **media.py** - There is the class inside that contains the movie attributes.
 
 # Live Demo
-<a href="http://htmlpreview.github.io/?https://github.com/vincenzot/movie-trailer-website-project/blob/master/fresh_tomatoes.html">Click here</a> to see live demo.
+<a target="_blank" href="http://htmlpreview.github.io/?https://github.com/vincenzot/movie-trailer-website-project/blob/master/fresh_tomatoes.html">Click here</a> to see live demo.
 
 # Creator
 
