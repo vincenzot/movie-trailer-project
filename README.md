@@ -29,7 +29,7 @@ movies = [THE_IMITATION_GAME,
           A_BEAUTIFUL_MIND,
           BLACKJACK,
           THE_BANK,
-          <b>MOVIE_ID</b>]
+          MOVIE_ID]
 ```
 5. Run **entertainment_center.py**;
 6. Open **fresh_tomatoes.html** file generated and use it.
