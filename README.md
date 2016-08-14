@@ -15,7 +15,6 @@ MOVIE_ID = media.Movie("Movie Title",
                       "Genre",
                       "Actors",
                       "Description",
-                      "Mpaa",
                       "Mpaa icon")
 ```
 4. Add your MOVIE_ID in the array at the bottom:
