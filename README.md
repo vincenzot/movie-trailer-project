@@ -2,10 +2,10 @@
 A Movie Trailer Website where users can browse featured movie list.
 
 #Instructions
-1) Download this repository;
-2) Open **entertainment_center.py**;
-3) If you want you can add custom movie in the list by adding this string
-
+1. Download this repository;
+2. Open **entertainment_center.py**;
+3. If you want you can add custom movie in the list by adding this string
+```
 **MOVIE_ID** = media.Movie("Movie Title",
                       "Movie Cover URL",
                       "Publish Year",
@@ -17,8 +17,9 @@ A Movie Trailer Website where users can browse featured movie list.
                       "Description",
                       "Mpaa",
                       "Mpaa icon")
-
-4) Add your MOVIE_ID in the array at the bottom:
+```
+4. Add your MOVIE_ID in the array at the bottom:
+```
 movies = [THE_IMITATION_GAME,
           FLASH_OF_GENIUS,
           ENIGMA,
@@ -29,9 +30,9 @@ movies = [THE_IMITATION_GAME,
           BLACKJACK,
           THE_BANK,
           **MOVIE_ID**]
-
-5) Run **entertainment_center.py**;
-6) Open **fresh_tomatoes.html** file generated and use it.
+```
+5. Run **entertainment_center.py**;
+6. Open **fresh_tomatoes.html** file generated and use it.
 
 # Project File Description
 In this project there are these file list:
