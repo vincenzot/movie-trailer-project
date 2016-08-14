@@ -5,6 +5,7 @@ import re
 
 # Styles and scripting for the page
 main_page_head = '''
+<html>
 <head>
     <meta charset="utf-8">
     <title>Movie Trailer List - Project 1 - Vincenzo Tartaglia</title>
@@ -109,12 +110,123 @@ main_page_content = '''
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Movie Trailer Project</a>
           </div>
+<button type="button" style="margin-top:9px;float:right;margin-left:5px;" class="btn btn-info btn-md" data-toggle="modal" data-target="#CreditsModal">Credits</button>
+<button type="button" style="margin-top:9px;float:right;" class="btn btn-info btn-md" data-toggle="modal" data-target="#Mpaa">MPAA ratings</button>
+
         </div>
+
+
+          
       </div>
     </div>
+
+          <div class="jumbotron text-center">
+              <h2>Welcome to Movie Trailer Website</h2>
+              <p>Click on your favorite movie title to see the trailer</p>
+          </div>
+
+    
+
+<!-- Modal MPAA -->
+<div id="Mpaa" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">MPAA's Explanation</h4>
+      </div>
+      <div class="modal-body">
+
+<p>MPAA is the organization that administers American film ratings.</p>      
+        <table class="wikitable" style="margin: 1em auto 1em auto;">
+<tbody><tr>
+<th style="padding:10 20 10 10">Rating</th>
+<th style="padding:10 20 10 10">Meaning</th>
+<th>MPAA's Explanation</th>
+</tr>
+<tr>
+<td align="center"><b>G</b></td>
+<td>General Audiences</td>
+<td>"Nothing that would offend parents for viewing by children."
+<p>On the box: "All ages admitted"</p>
+</td>
+</tr>
+<tr>
+<td align="center"><b>PG</b></td>
+<td>Parental Guidance Suggested</td>
+<td>"Parents urged to give 'parental guidance.' May contain some material parents might not like for their young children."
+<p>On the box: "Some material may not be suitable for children"</p>
+</td>
+</tr>
+<tr>
+<td align="center"><b>PG-13</b></td>
+<td>Parents Strongly Cautioned</td>
+<td>"Parents are urged to be cautious. Some material may be inappropriate for pre-teenagers."
+<p>On the box: "Some material may be inappropriate for children under 13"</p>
+</td>
+</tr>
+<tr>
+<td align="center"><b>R</b></td>
+<td>Restricted</td>
+<td>"Contains some adult material. Parents are urged to learn more about the film before taking their young children with them."
+<p>On the box: "Under 17 requires accompanying parent or adult guardian"</p>
+</td>
+</tr>
+<tr>
+<td align="center"><b>NC-17</b></td>
+<td>Adults Only</td>
+<td>"Clearly adult. Children are not admitted."
+<p>On the box: "No One 17 and Under Admitted"</p>
+</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Modal Credits-->
+<div id="CreditsModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Credits</h4>
+      </div>
+      <div class="modal-body">
+          <p><b>Creator:</b> Vincenzo Tartaglia</p>
+          <img src="http://it.seaicons.com/wp-content/uploads/2016/03/Linkedin-icon-17.png" height="40" width="40"></img><a target="_blank" href="https://it.linkedin.com/in/vincenzo-tartaglia-33474a111">View LinkedIn Profile</a>
+          <br>
+          <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" height="40" width="40"></img><a target="_blank" href="https://github.com/vincenzot">github.com/vincenzot</a>
+          <br>
+          <img src="http://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a" height="40" width="40"></img><a target="_blank" href="http://stackoverflow.com/users/5861977/vincenzo-tartaglia">vincenzo-tartaglia</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+          
+    
     <div class="container">
       {movie_tiles}
     </div>
+
+              
   </body>
 </html>
 '''
@@ -123,7 +235,8 @@ main_page_content = '''
 # A single movie entry html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
+    <img style="position:relative; top:0; left:0; z-index:1" src="{poster_image_url}" width="220" height="342">
+    <img style="position:absolute; top:20; left:310; z-index:2" src="{mpaa_icon}" width="50" height="30">
     <h2>{movie_title}<h4>({year})</h4></h2><h5><b>Lenght:</b> {lenght} minutes</h5><h5><b>Genre:</b> {genre}</h5><h5><b>Plot:</b> <i>{plot}</i></h5>
 </div>
 '''
@@ -149,7 +262,8 @@ def create_movie_tiles_content(movies):
             lenght = movie.lenght,
             year=movie.year,
             genre=movie.genre,
-            plot=movie.plot
+            plot=movie.plot,
+            mpaa_icon=movie.mpaa_icon
         )
     return content
 
