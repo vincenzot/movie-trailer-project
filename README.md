@@ -7,6 +7,9 @@ In this project there are these file list:
 * **fresh_tomatoes.py** - It's the web site HTML page generator. It receives the movie list from `entertainment_center.py` and uses it to generate `fresh_tomatoes.html` page. Then it will open the page with your default web browser.
 * **media.py** - There is the class inside that contains the movie attributes.
 
+# Live Demo
+<a href="http://htmlpreview.github.io/?https://github.com/vincenzot/movie-trailer-website-project/blob/master/fresh_tomatoes.html">Click here</a> to see live demo.
+
 # Creator
 
 **Vincenzo Tartaglia**
