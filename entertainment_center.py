@@ -1,6 +1,8 @@
 import fresh_tomatoes
 import media
 
+# Creating single movie element with corresponding attributes for each title
+
 TITANIC = media.Movie("Titanic",
                       "http://nsa37.casimages.com/img/2015/09/25/150925121855869372.jpg",
                       "1997",
@@ -9,7 +11,8 @@ TITANIC = media.Movie("Titanic",
                       "James Cameron",
                       "Drama, Romance",
                       "Leonardo DiCaprio, Kate Winslet, Billy Zane",
-                      "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+                      "A seventeen-year-old aristocrat falls in love with a kind"  
+                      " but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
 
 BENVENUTI_AL_SUD = media.Movie("Benvenuti al Sud",
@@ -20,7 +23,9 @@ BENVENUTI_AL_SUD = media.Movie("Benvenuti al Sud",
                       "Luca Miniero",
                       "Comedy",
                       "Claudio Bisio, Alessandro Siani, Angela Finocchiaro",
-                      "Overwhelmed by his wife, a Northern Italy postal worker feigns a disability to request a transfer to Milan and when he's unmasked is sent for two years to a far and tiny village near Naples",
+                      "Overwhelmed by his wife, a Northern Italy postal worker feigns a"
+                      " disability to request a transfer to Milan and when he's "
+                      "unmasked is sent for two years to a far and tiny village near Naples",
                       "https://upload.wikimedia.org/wikipedia/commons/0/05/RATED_G.svg")
 
 THE_SOCIAL_NETWORK = media.Movie("The Social Network",
@@ -102,6 +107,8 @@ THE_BANK = media.Movie("The Bank",
 
 
 
+# Appending movies into the list called "movies":
+
 movies = [THE_IMITATION_GAME,
           FLASH_OF_GENIUS,
           ENIGMA,
@@ -112,4 +119,6 @@ movies = [THE_IMITATION_GAME,
           BLACKJACK,
           THE_BANK]
 
+# Calling the external "fresh_tomatoes.py" file to
+# make HTML page
 fresh_tomatoes.open_movies_page(movies)
