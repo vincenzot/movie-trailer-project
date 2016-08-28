@@ -179,4 +179,5 @@ movies = [THE_IMITATION_GAME,
 
 # Calling the external "fresh_tomatoes.py" file to
 # make HTML page
+
 fresh_tomatoes.open_movies_page(movies)
