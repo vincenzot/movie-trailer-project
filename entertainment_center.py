@@ -63,7 +63,7 @@ THE_SOCIAL_NETWORK = media.Movie(
                       "in history... but for this entrepreneur,"
                       " success leads to both personal and "
                       "legal complications.",
-                      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png"  #noqa
+                      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png"  # noqa
                       )
 
 THE_IMITATION_GAME = media.Movie(
@@ -80,7 +80,8 @@ THE_IMITATION_GAME = media.Movie(
                       "nail-biting race against time by Turing and his "
                       "brilliant team of code-breakers at Britain's "
                       "top-secret Government Code and Cypher School at "
-                      "Bletchley Park, during the darkest days of World War II.",
+                      "Bletchley Park, during the darkest"
+                      " days of World War II.",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png"  # noqa
                       )
 
@@ -108,7 +109,8 @@ ENIGMA = media.Movie(
                       "Michael Apted",
                       "Drama, Mystery, Romance",
                       "Dougray Scott, Kate Winslet, Saffron Burrows",
-                      "A young genius frantically races against time "
+                      "A young genius frantically"
+                      " races against time "
                       "to crack an enemy code and solve the mystery surrounding "
                       "the woman he loves.",
                       "https://upload.wikimedia.org/wikipedia/commons/7/7e/RATED_R.svg"  # noqa
@@ -139,7 +141,8 @@ BLACKJACK = media.Movie(
                       "Robert Luketic",
                       "Crime, Drama, Thriller",
                       "Jim Sturgess, Kate Bosworth, Kevin Spacey",
-                      "21 is the fact-based story about six MIT students "
+                      "21 is the fact-based "
+                      "story about six MIT students "
                       "who were trained to become experts in card counting"
                       " and subsequently took Vegas casinos for millions in winnings. ",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png"  # noqa
