@@ -146,7 +146,8 @@ BLACKJACK = media.Movie(
                       "story about six MIT students "
                       "who were trained to become "
                       "experts in card counting"
-                      " and subsequently took Vegas casinos for millions in winnings. ",
+                      " and subsequently took Vegas"
+                      " casinos for millions in winnings. ",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png"  # noqa
                       )
 
