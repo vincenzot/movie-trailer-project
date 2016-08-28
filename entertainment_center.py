@@ -3,19 +3,27 @@ import media
 
 # Creating single movie element with corresponding attributes for each title
 
-TITANIC = media.Movie("Titanic",
+TITANIC = media.Movie(
+                      "Titanic",
                       "http://nsa37.casimages.com/img/2015/09/25/150925121855869372.jpg",
+                    # noqa
                       "1997",
                       "194",
                       "https://www.youtube.com/watch?v=2e-eXJ6HgkQ",
                       "James Cameron",
                       "Drama, Romance",
                       "Leonardo DiCaprio, Kate Winslet, Billy Zane",
-                      "A seventeen-year-old aristocrat falls in love with a kind"  
-                      " but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
-                      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
+                      "A seventeen-year-old aristocrat"
+                      " falls in love with a kind"
+                      " but poor artist aboard"
+                      " the luxurious, ill-fated"
+                      " R.M.S. Titanic.",
+                      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png"
+                    # noqa
+                      )
 
-BENVENUTI_AL_SUD = media.Movie("Benvenuti al Sud",
+BENVENUTI_AL_SUD = media.Movie(
+                      "Benvenuti al Sud",
                       "https://upload.wikimedia.org/wikipedia/en/2/21/Benvenuti_al_Sud.jpg",
                       "2010",
                       "106",
@@ -23,23 +31,46 @@ BENVENUTI_AL_SUD = media.Movie("Benvenuti al Sud",
                       "Luca Miniero",
                       "Comedy",
                       "Claudio Bisio, Alessandro Siani, Angela Finocchiaro",
-                      "Overwhelmed by his wife, a Northern Italy postal worker feigns a"
-                      " disability to request a transfer to Milan and when he's "
-                      "unmasked is sent for two years to a far and tiny village near Naples",
+                      "Overwhelmed by his wife,"
+                      " a Northern Italy postal"
+                      " worker feigns a"
+                      " disability to request a transfer"
+                      " to Milan and when he's "
+                      "unmasked is sent for two years to a"
+                      " far and tiny village near Naples",
                       "https://upload.wikimedia.org/wikipedia/commons/0/05/RATED_G.svg")
+                    # noqa
 
-THE_SOCIAL_NETWORK = media.Movie("The Social Network",
+THE_SOCIAL_NETWORK = media.Movie(
+                      "The Social Network",
                       "https://upload.wikimedia.org/wikipedia/en/7/7a/Social_network_film_poster.jpg",
+                    # noqa
                       "2010",
                       "120",
                       "https://www.youtube.com/watch?v=lB95KLmpLR4",
                       "David Fincher",
                       "Comedy, Biography, Drama",
                       "Jesse Eisenberg, Andrew Garfield, Justin Timberlake",
-                      "On a fall night in 2003, Harvard undergrad and computer programming genius Mark Zuckerberg sits down at his computer and heatedly begins working on a new idea. In a fury of blogging and programming, what begins in his dorm room soon becomes a global social network and a revolution in communication. A mere six years and 500 million friends later, Mark Zuckerberg is the youngest billionaire in history... but for this entrepreneur, success leads to both personal and legal complications.",
+                      "On a fall night in 2003,"
+                      " Harvard undergrad and computer "
+                      "programming genius Mark Zuckerberg "
+                      "sits down at his computer and heatedly "
+                      "begins working on a new idea. "
+                      "In a fury of blogging and "
+                      "programming, what begins in his"
+                      " dorm room soon becomes a global "
+                      "social network and a revolution in"
+                      " communication. A mere six years and"
+                      " 500 million friends later, Mark "
+                      "Zuckerberg is the youngest billionaire "
+                      "in history... but for this entrepreneur,"
+                      " success leads to both personal and "
+                      "legal complications.",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
+                    # noqa
 
-THE_IMITATION_GAME = media.Movie("The Imitation Game",
+THE_IMITATION_GAME = media.Movie(
+                      "The Imitation Game",
                       "http://images.catania.liveuniversity.it/sites/2/2015/02/the_imitation_game_a_p.jpg",
                       "2014",
                       "114",
@@ -47,10 +78,16 @@ THE_IMITATION_GAME = media.Movie("The Imitation Game",
                       "Morten Tyldum",
                       "Biography, Drama, Thriller, History",
                       "Benedict Cumberbatch, Keira Knightley, Matthew Goode",
-                      "Based on the real life story of legendary cryptanalyst Alan Turing, the film portrays the nail-biting race against time by Turing and his brilliant team of code-breakers at Britain's top-secret Government Code and Cypher School at Bletchley Park, during the darkest days of World War II.",
+                      "Based on the real life story of legendary"
+                      " cryptanalyst Alan Turing, the film portrays the "
+                      "nail-biting race against time by Turing and his "
+                      "brilliant team of code-breakers at Britain's "
+                      "top-secret Government Code and Cypher School at "
+                      "Bletchley Park, during the darkest days of World War II.",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
 
-FLASH_OF_GENIUS = media.Movie("Flash of Genius",
+FLASH_OF_GENIUS = media.Movie(
+                      "Flash of Genius",
                       "http://mcpl.info/sites/default/files/imagepicker/23/Flash-Of-Genius.jpg",
                       "2008",
                       "119",
@@ -58,10 +95,13 @@ FLASH_OF_GENIUS = media.Movie("Flash of Genius",
                       "Marc Abraham",
                       "Biography, Drama",
                       "Greg Kinnear, Lauren Graham, Alan Alda",
-                      "Robert Kearns takes on the Detroit automakers who he claims stole his idea for the intermittent windshield wiper.",
+                      "Robert Kearns takes on the Detroit automakers"
+                      " who he claims stole his idea for the intermittent"
+                      " windshield wiper.",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
 
-ENIGMA = media.Movie("Enigma",
+ENIGMA = media.Movie(
+                      "Enigma",
                       "http://cfile239.uf.daum.net/image/264D3F4452163717090573",
                       "2001",
                       "119",
@@ -69,10 +109,13 @@ ENIGMA = media.Movie("Enigma",
                       "Michael Apted",
                       "Drama, Mystery, Romance",
                       "Dougray Scott, Kate Winslet, Saffron Burrows",
-                      "A young genius frantically races against time to crack an enemy code and solve the mystery surrounding the woman he loves.",
+                      "A young genius frantically races against time "
+                      "to crack an enemy code and solve the mystery surrounding "
+                      "the woman he loves.",
                       "https://upload.wikimedia.org/wikipedia/commons/7/7e/RATED_R.svg")
 
-A_BEAUTIFUL_MIND = media.Movie("A Beautiful Mind",
+A_BEAUTIFUL_MIND = media.Movie(
+                      "A Beautiful Mind",
                       "http://psicotesa.com/wp-content/uploads/2014/03/Una_mente_maravillosa-999588239-large.jpg",
                       "2001",
                       "135",
@@ -83,7 +126,8 @@ A_BEAUTIFUL_MIND = media.Movie("A Beautiful Mind",
                       "After John Nash, a brilliant but asocial mathematician, accepts secret work in cryptography, his life takes a turn for the nightmarish.",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
 
-BLACKJACK = media.Movie("21",
+BLACKJACK = media.Movie(
+                      "21",
                       "https://images-na.ssl-images-amazon.com/images/I/511Pe8cRhLL.jpg",
                       "2008",
                       "123",
@@ -91,11 +135,17 @@ BLACKJACK = media.Movie("21",
                       "Robert Luketic",
                       "Crime, Drama, Thriller",
                       "Jim Sturgess, Kate Bosworth, Kevin Spacey",
-                      "21 is the fact-based story about six MIT students who were trained to become experts in card counting and subsequently took Vegas casinos for millions in winnings. ",
-                      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png")
+                      "21 is the fact-based story about six MIT students "
+                      "who were trained to become experts in card counting"
+                      " and subsequently took Vegas casinos for millions in winnings. ",
+                      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/RATED_PG-13.svg/2000px-RATED_PG-13.svg.png"
+                    # noqa
+                      )
 
-THE_BANK = media.Movie("The Bank",
+THE_BANK = media.Movie(
+                      "The Bank",
                       "http://moviescounter.com/wp-content/uploads/2016/03/MV5BMTkwMjU4NTM3Ml5BMl5BanBnXkFtZTcwODU4NDEzMQ@@._V1__SX1072_SY673_-212x300.jpg",
+                    # noqa
                       "2001",
                       "104",
                       "https://www.youtube.com/watch?v=vPXK-FfnXxU",
@@ -103,9 +153,8 @@ THE_BANK = media.Movie("The Bank",
                       "Drama, Romance, Thriller",
                       "David Wenham, Anthony LaPaglia, Sibylla Budd",
                       "The Bank is a thriller about banking, corruption and alchemy.",
-                      "https://upload.wikimedia.org/wikipedia/commons/7/7e/RATED_R.svg")
-
-
+                      "https://upload.wikimedia.org/wikipedia/commons/7/7e/RATED_R.svg"
+                      )
 
 # Appending movies into the list called "movies":
 
