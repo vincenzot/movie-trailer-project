@@ -1,4 +1,4 @@
-# Movie Trailer Website - Udacity Full Stack Developer Nanodegree Project 1
+# Movie Trailer Website
 A Movie Trailer Website where users can browse featured movie list.
 
 #Instructions
