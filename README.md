@@ -1,7 +1,7 @@
 # Movie Trailer Website
 A Movie Trailer Website where users can browse featured movie list.
 
-#Instructions
+# Instructions
 1. Download this repository;
 2. Open **entertainment_center.py**;
 3. If you want you can add custom movie in the list by adding this string
